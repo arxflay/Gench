@@ -3,7 +3,7 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Gench.Business
+namespace Gench.Loaders
 {
     public class SvgLoader
     {

@@ -1,7 +1,9 @@
 ﻿using System;
-using Gench.Business;
 using System.IO;
 using System.Threading.Tasks;
+
+using Gench.Business;
+using Gench.Utils;
 
 namespace Gench
 {
@@ -38,11 +40,10 @@ namespace Gench
                 Console.WriteLine("Invalid count");
                 return;
             }
-            
-            ModelGeneratorFullBody gen = new ModelGeneratorFullBody();
+            ModelGeneratorFullModel gen = new ModelGeneratorFullModel();
             SvgWriter writer = new SvgWriter();
             var models = gen.GenerateModels(count, targetsPath + "parts.json", targetsPath + "color_targets.json");
-            await writer.AsyncWriteMultiple(outputPath, models); 
+            await writer.AsyncWriteMultiple(outputPath, models);
         }
     }
 }

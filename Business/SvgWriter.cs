@@ -1,8 +1,8 @@
 using System.Xml.Linq;
-using System;
 using System.Threading.Tasks;
-using System.IO;
 using System.Collections.Generic;
+
+using Gench.Utils;
 
 namespace Gench.Business
 {
@@ -20,10 +20,28 @@ namespace Gench.Business
 
         public async Task AsyncWriteMultiple(string path, List<XDocument> svgs)
         {
+            System.Reflection.MethodBase currentMethod = null;
+            
+            if (svgs == null)
+            {
+                currentMethod = System.Reflection.MethodBase.GetCurrentMethod();
+                Logger.LogText(this, currentMethod, $"SVG XDocument List is null");
+                return;
+            }
+
             int count = svgs.Count;
+
             for (int i = 0; i < count; i++)
             {
-                await Task.Run(() => AsyncWrite(path, i + ".svg", svgs[i]));
+                try
+                {
+                    await Task.Run(() => AsyncWrite(path, i + ".svg", svgs[i]));
+                }
+                catch (System.NullReferenceException)
+                {
+                    currentMethod = System.Reflection.MethodBase.GetCurrentMethod();
+                    Logger.LogText(this, currentMethod, $"SVG XDocument {i} in List null");
+                }
             }
         }
     }
