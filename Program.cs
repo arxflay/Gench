@@ -40,10 +40,19 @@ namespace Gench
                 Console.WriteLine("Invalid count");
                 return;
             }
-            ModelGeneratorFullModel gen = new ModelGeneratorFullModel();
+            Stopwatch s = new Stopwatch();
+            s.Start();
+            ModelGenerator gen = new ModelGenerator();
+
+            var models = gen.GenerateModels(count, 
+                                            targetsPath + "main_part.json",
+                                            targetsPath + "parts.json",
+                                            targetsPath + "color_targets.json");
+                                            
             SvgWriter writer = new SvgWriter();
-            var models = gen.GenerateModels(count, targetsPath + "parts.json", targetsPath + "color_targets.json");
             await writer.AsyncWriteMultiple(outputPath, models);
+            s.Stop();
+            Console.WriteLine(s.Elapsed());
         }
     }
 }

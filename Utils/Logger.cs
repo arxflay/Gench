@@ -21,7 +21,7 @@ namespace Gench.Utils
             Debug.WriteLine($"{DateTime.Now} from {caller.ToString()} in {method.Name}: {text}");
         }
         
-        public static void LogException(object caller, string text)
+        public static void LogText(object caller, string text)
         {
             Debug.WriteLine($"{DateTime.Now} from {caller.ToString()}: {text}");
         }

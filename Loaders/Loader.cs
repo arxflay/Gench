@@ -33,20 +33,19 @@ namespace Gench.Loaders
             return content;
         }
 
-        public List<T> LoadMultiple(string filename)
+        public IEnumerable<T> LoadMultiple(string filename)
         {
-            List<T> parts = null;
+            IEnumerable<T> parts = null;
             string content = null;
             System.Reflection.MethodBase currentMethod = null;
             
             try
             {
                 content = GetFileContent(filename);
-                parts = JsonConvert.DeserializeObject<List<T>>(content);
+                parts = JsonConvert.DeserializeObject<IEnumerable<T>>(content);
             }
-            catch (System.ArgumentNullException e)
+            catch (System.ArgumentNullException)
             {
-                e.ToString();
                 currentMethod = System.Reflection.MethodBase.GetCurrentMethod();
                 Logger.LogText(this, currentMethod, @"string from file is null");
             }
@@ -70,9 +69,8 @@ namespace Gench.Loaders
                 content = GetFileContent(filename);
                 modelpart = JsonConvert.DeserializeObject<T>(content);
             }
-            catch (System.ArgumentNullException e)
+            catch (System.ArgumentNullException)
             {
-                e.ToString();
                 currentMethod = System.Reflection.MethodBase.GetCurrentMethod();
                 Logger.LogText(this, currentMethod, @"String from file is null");
             }

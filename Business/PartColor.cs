@@ -4,10 +4,9 @@ namespace Gench.Business
 {
     public class PartColor
     {
-        public byte R{ get; set; }
-        public byte G{ get; set; }
-        public byte B{ get; set; }
-        public byte A{ get; set; }
+        public byte R { get; set; }
+        public byte G { get; set; }
+        public byte B { get; set; }
 
         private string ByteToHexString(byte color)
         {
@@ -25,26 +24,29 @@ namespace Gench.Business
             return str;
         }
 
-        public PartColor()
+        private string GetRGB()
         {
+            return "#" + ByteToHexString(R) + ByteToHexString(G) + ByteToHexString(B);
         }
-        
-        public void SetPartColor(byte r, byte g, byte b, byte a = 0xff)
+
+
+        public PartColor(byte r = 0xff, byte g = 0xff, byte b = 0xff)
         {
             R = r;
             G = g;
             B = b;
-            A = a;
+        }
+        
+        public void SetPartColor(byte r, byte g, byte b)
+        {
+            R = r;
+            G = g;
+            B = b;
         }
 
         public override string ToString()
         {
-            return "#" + (ByteToHexString(R) + ByteToHexString(G) + ByteToHexString(B)).ToLower();
-        }
-
-        public static PartColor StringToPartColor(string color)
-        {
-            return null;
+            return (GetRGB()).ToLower();
         }
 
     }
