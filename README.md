@@ -1,5 +1,5 @@
 # Gench
-Program that generates .svg images using patterns. </br>
+Program that generates .svg images from .svg patterns . </br>
 Also it can generate different colors for specific parts of the image </br>
 ## Requirements
 - .NET Core 5.0
@@ -49,6 +49,8 @@ parameters:</br>
          ```"B"```:  (ex. 20) </br>
        }
 ## Example usage
-As pattern are used body images, hair, beards from Sword & Sandals (just for testing purposes) </br>
-
+<strong>patterns</strong> (some .svg files from sword & sandals): </br>
+<img src="https://i.ibb.co/1nnDgfc/example.png" alt="example" border="0"> </br>
+As pattern are used body images, hair and beards from Sword & Sandals (just for testing purposes) </br>
+<strong>generation result:</strong></br>
 <img src="https://i.ibb.co/K6pKdky/test.png" alt="test" border="0">
