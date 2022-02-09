@@ -1,0 +1,128 @@
+[
+    {
+        "Name" : "MainColor",
+        "OwnerGroup" : "Base",
+        "TargetColor" : "#cccccc",
+        "GenAffectedByPrevTarget" : false,
+        "MinGenColorRange" :
+        {
+            "R" : 20,
+            "G" : 20,
+            "B" : 20
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 130,
+            "G" : 130,
+            "B" : 130
+        }
+    },
+    {
+        "Name" : "SecondaryColor",
+        "OwnerGroup" : "Base",
+        "TargetColor" : "#eaeaea",
+        "GenAffectedByPrevTarget" : true,
+        "MinGenColorRange" :
+        {
+            "R" : 5,
+            "G" : 5,
+            "B" : 5
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 10,
+            "G" : 10,
+            "B" : 10
+        }
+    },
+    {
+        "Name" : "Secondary2Color",
+        "OwnerGroup" : "Base",
+        "TargetColor" : "#626262",
+        "GenAffectedByPrevTarget" : false,
+        "MinGenColorRange" :
+        {
+            "R" : 20,
+            "G" : 20,
+            "B" : 20
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 120,
+            "G" : 120,
+            "B" : 120
+        }
+    },
+    {
+        "Name" : "MainColor",
+        "OwnerGroup" : "Beards",
+        "TargetColor" : "#cccccc",
+        "GenAffectedByPrevTarget" : false,
+        "MinGenColorRange" :
+        {
+            "R" : 20,
+            "G" : 20,
+            "B" : 20
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 130,
+            "G" : 130,
+            "B" : 130
+        }
+    },
+    {
+        "Name" : "SecondaryColor",
+        "OwnerGroup" : "Beards",
+        "TargetColor" : "#ffffff",
+        "GenAffectedByPrevTarget" : true,
+        "MinGenColorRange" :
+        {
+            "R" : 5,
+            "G" : 5,
+            "B" : 5
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 15,
+            "G" : 15,
+            "B" : 15
+        }
+    },
+    {
+        "Name" : "MainColor",
+        "OwnerGroup" : "Hair",
+        "TargetColor" : "#cccccc",
+        "GenAffectedByPrevTarget" : false,
+        "MinGenColorRange" :
+        {
+            "R" : 20,
+            "G" : 20,
+            "B" : 20
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 130,
+            "G" : 130,
+            "B" : 130
+        }
+    },
+    {
+        "Name" : "SecondaryColor",
+        "OwnerGroup" : "Hair",
+        "TargetColor" : "#ffffff",
+        "GenAffectedByPrevTarget" : true,
+        "MinGenColorRange" :
+        {
+            "R" : 5,
+            "G" : 5,
+            "B" : 5
+        },
+        "MaxGenColorRange" :
+        {
+            "R" : 15,
+            "G" : 15,
+            "B" : 15
+        }
+    }
+]

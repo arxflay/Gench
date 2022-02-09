@@ -1,0 +1,69 @@
+[
+    {
+        "Name" : "shape100",
+        "Path" : "Data/hair_beards/1.svg",
+        "Group" : "Beards",
+        "RelativePath" : true,
+        "Position" :
+        {
+            "X" : -22.0,
+            "Y" : -200.0
+        },
+        "Width" : "200",
+        "Height" : "200"
+    },
+    {
+        "Name" : "shape101",
+        "Path" : "Data/hair_beards/9.svg",
+        "Group" : "Beards",
+        "RelativePath" : true,
+        "Position" :
+        {
+            "X" : -15.0,
+            "Y" : -190.0
+        },
+        "Width" : "200",
+        "Height" : "200"
+    },
+    {
+        "Name" : "shape102",
+        "Path" : "Data/hair_beards/11.svg",
+        "Group" : "Beards",
+        "RelativePath" : true,
+        "Position" :
+        {
+            "X" : -22.0,
+            "Y" : -200.0
+        },
+        "Width" : "200",
+        "Height" : "200"
+    },
+    {
+        "Name" : "shape103",
+        "Path" : "Data/hair_beards/25.svg",
+        "Group" : "Hair",
+        "RelativePath" : true,
+        "Position" :
+        {
+            "X" : -29.0,
+            "Y" : -224.0
+        },
+        "Width" : "200",
+        "Height" : "200"
+    },
+    {
+        "Name" : "shape104",
+        "Path" : "Data/hair_beards/24.svg",
+        "Group" : "Hair",
+        "RelativePath" : true,
+        "Position" :
+        {
+            "X" : -21.0,
+            "Y" : -219.0
+        },
+        "Width" : "200",
+        "Height" : "200"
+    }
+    
+    
+]
